@@ -1,5 +1,6 @@
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import PropTypes from 'prop-types';
+import './audio-item.css';
 
 export default function AudioItem({ title, duration, podcastName, date }) {
   return (
