@@ -1,22 +1,30 @@
 import './App.css';
-import { useEffect } from 'react';
-// import PodcastsApp from './components/podcasts-app/PodcastsApp';
+import { useState, useEffect } from 'react';
+import PodcastsApp from './components/podcasts-app/PodcastsApp';
+import NightlightIcon from '@mui/icons-material/Nightlight';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import IconButton from '@mui/material/IconButton';
 
 export default function App() {
+  const [theme, setTheme] = useState('light-theme');
   const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+  const localStorageTheme = localStorage.getItem('theme');
 
   useEffect(() => {
-    const currentTheme = localStorage.getItem('theme');
-    if (currentTheme) {
-      document.body.className = currentTheme;
+    if (localStorageTheme) {
+      document.body.className = localStorageTheme;
+      setTheme(localStorageTheme);
     } else {
       // TODO - fix this. Doesn't work.
       // console.log(prefersDarkScheme, prefersDarkScheme.matches);
-      const theme = prefersDarkScheme.matches ? 'dark-theme' : 'light-theme';
-      localStorage.setItem('theme', theme);
-      document.body.className = theme;
+      const browserTheme = prefersDarkScheme.matches
+        ? 'dark-theme'
+        : 'light-theme';
+      localStorage.setItem('theme', browserTheme);
+      setTheme(browserTheme);
+      document.body.className = browserTheme;
     }
-  }, [prefersDarkScheme]);
+  }, [prefersDarkScheme, localStorageTheme]);
 
   function toggleTheme() {
     const isDarkTheme = document.body.classList.contains('dark-theme');
@@ -24,12 +32,18 @@ export default function App() {
 
     localStorage.setItem('theme', newTheme);
     document.body.className = newTheme;
+    setTheme(newTheme);
   }
 
   return (
     <>
-      {/* <PodcastsApp /> */}
-      <button onClick={toggleTheme}>Toggle theme</button>
+      <PodcastsApp />
+      <IconButton
+        aria-label="Toggle theme button"
+        onClick={toggleTheme}
+      >
+        {theme === 'light-theme' ? <NightlightIcon /> : <LightModeIcon />}
+      </IconButton>
     </>
   );
 }

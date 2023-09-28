@@ -1,8 +1,12 @@
-// import '/index.css';
+import TabsNav from '../tabs-nav/TabsNav';
+
 export default function PodcastsApp() {
   return (
     <>
-      <div>x</div>
+      <main>
+        <h1>Podcasts</h1>
+        <TabsNav />
+      </main>
     </>
   );
 }
