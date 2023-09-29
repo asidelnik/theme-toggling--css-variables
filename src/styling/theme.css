@@ -15,17 +15,17 @@
   --bg-color-hue-light: 210;
   --text-color-hue-light: 216;
   
-  --body-bg-color-light: hsl(--var(--bg-color-hue-light), 24%, 84%);
-  --header-bg-color-light: hsl(--var(--bg-color-hue-light), 32%, 91%);
-  --page-bg-color-light: hsl(--var(--bg-color-hue-light), 33%, 98%);
-  --search-bg-color-light: hsl(--var(--bg-color-hue-light), 33%, 95%);
+  --body-bg-color-light: hsl(var(--bg-color-hue-light), 24%, 84%);
+  --header-bg-color-light: hsl(var(--bg-color-hue-light), 32%, 91%);
+  --page-bg-color-light: hsl(var(--bg-color-hue-light), 33%, 98%);
+  --search-bg-color-light: hsl(var(--bg-color-hue-light), 33%, 95%);
   --controls-bg-color-light: hsl(0, 0%, 100%);
   
   /* Text color variants */
-  --text-color-contrast-1-light: hsl(--var(--text-color-hue-light), 17%, 35%);
-  --text-color-contrast-2-light: hsl(--var(--text-color-hue-light), 23%, 23%);
-  --text-color-contrast-3-light: hsl(--var(--text-color-hue-light), 15%, 52%);
-  --text-color-contrast-4-light: hsl(--var(--text-color-hue-light), 33%, 95%);
+  --text-color-contrast-1-light: hsl(var(--text-color-hue-light), 17%, 35%);
+  --text-color-contrast-2-light: hsl(var(--text-color-hue-light), 23%, 23%);
+  --text-color-contrast-3-light: hsl(var(--text-color-hue-light), 15%, 52%);
+  --text-color-contrast-4-light: hsl(var(--text-color-hue-light), 33%, 95%);
   
   /* --light-text-color: #444444;
   --light-bg-color: #eaeaea;
@@ -38,16 +38,16 @@
   --text-color-hue-dark: 0;
   
   --body-bg-color-dark: hsl(220, 26%, 14%);
-  --header-bg-color-dark: hsl(--var(--bg-color-hue-dark), 23%, 23%);
-  --page-bg-color-dark: hsl(--var(--bg-color-hue-dark), 19%, 28%);
-  --search-bg-color-dark: hsl(--var(--bg-color-hue-dark), 23%, 23%);
+  --header-bg-color-dark: hsl(var(--bg-color-hue-dark), 23%, 23%);
+  --page-bg-color-dark: hsl(var(--bg-color-hue-dark), 19%, 28%);
+  --search-bg-color-dark: hsl(var(--bg-color-hue-dark), 23%, 23%);
   --controls-bg-color-dark: hsl(220, 17%, 35%);
   
   /* Text color variants */
-  --text-color-contrast-1-dark: hsl(--var(--text-color-hue-dark), 0%, 100%);
-  --text-color-contrast-2-dark: hsl(--var(--text-color-hue-dark), 0%, 84%);
-  --text-color-contrast-3-dark: hsl(--var(--text-color-hue-dark), 0%, 52%);
-  --text-color-contrast-4-dark: hsl(--var(--text-color-hue-dark), 0%, 95%);
+  --text-color-contrast-1-dark: hsl(var(--text-color-hue-dark), 0%, 100%);
+  --text-color-contrast-2-dark: hsl(var(--text-color-hue-dark), 0%, 84%);
+  --text-color-contrast-3-dark: hsl(var(--text-color-hue-dark), 0%, 52%);
+  --text-color-contrast-4-dark: hsl(var(--text-color-hue-dark), 0%, 95%);
 
   /* --dark-text-color: #9e9e9e;
 
@@ -104,7 +104,7 @@ body.dark-theme {
 @media (prefers-color-scheme: dark) {
   /* defaults to dark theme */
   body.dark-theme {
-    --body-bg-color: red; /*var(--body-bg-color-dark);*/
+    --body-bg-color: var(--body-bg-color-dark);
     --header-bg-color: var(--header-bg-color-dark);
     --page-bg-color: var(--page-bg-color-dark);
     --search-bg-color: var(--search-bg-color-dark);
