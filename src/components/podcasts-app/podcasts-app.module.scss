@@ -1,0 +1,10 @@
+.container {
+  background-color: var(--header-bg-color);
+  border-radius: var(--border-radius-large);
+  width: 720px;
+  
+  h1 {
+    color: var(--text-color-contrast-1);
+    padding-block-end: 10px;
+  }
+}
