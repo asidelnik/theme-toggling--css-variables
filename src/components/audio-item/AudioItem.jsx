@@ -1,26 +1,26 @@
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import PropTypes from 'prop-types';
-import './audio-item.css';
+import c from './audio-item.module.scss';
 
 export default function AudioItem({ title, duration, podcastName, date }) {
   return (
     <>
-      <article className="audio-item">
-        <div className="icon">
+      <article className={c.audioItem}>
+        <div className={c.icon}>
           <VolumeUpIcon />
         </div>
 
-        <div className="title">
+        <div className={c.title}>
           <h3>{title}</h3>
         </div>
 
-        <div className="duration">
-          <p className="duration">{duration}</p>
+        <div className={c.duration}>
+          <p>{duration}</p>
         </div>
 
-        <div className="info">
-          <p className="podcast-name">{podcastName}</p>
-          <p className="date">{date}</p>
+        <div className={c.info}>
+          <p className={c.podcastName}>{podcastName}</p>
+          <p className={c.date}>{date}</p>
         </div>
       </article>
     </>

@@ -1,0 +1,19 @@
+.customTab {
+  background-color: var(--header-bg-color) !important;
+  border: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.customTabSelected {
+  background-color: var(--page-bg-color) !important;
+  color: var(--text-color-contrast-2) !important;
+  text-transform: none !important;
+  border-radius: 10px 10px 0 0;
+  border: 0;
+
+}
+
+.customTabSelected:focus {
+  outline: none;
+}
+

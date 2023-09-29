@@ -1,3 +1,4 @@
+import c from './episodes-page.module.scss';
 import Controls from '../Controls/Controls';
 import AudioList from '../audio-list/AudioList';
 import Search from '../search/Search';
@@ -5,9 +6,11 @@ import Search from '../search/Search';
 export default function EpisodesPage() {
   return (
     <>
-      <Search />
-      <AudioList />
-      <Controls />
+      <section className={c.container}>
+        <Search />
+        <AudioList />
+        <Controls />
+      </section>
     </>
   );
 }

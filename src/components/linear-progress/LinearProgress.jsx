@@ -4,7 +4,7 @@ import LinearProgress from '@mui/material/LinearProgress';
 
 export default function Progress() {
   // const [progress, setProgress] = useState(100);
-  const progress = 100;
+  const progress = 70;
   // useEffect(() => {
   //   const timer = setInterval(() => {
   //     setProgress((oldProgress) => {
