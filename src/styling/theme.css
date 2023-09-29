@@ -1,0 +1,103 @@
+/* Themes colors ********************/
+
+body.light-theme {
+  --body-bg-color: var(--body-bg-color-light); 
+  --header-bg-color: var(--header-bg-color-light); 
+  --page-bg-color: var(--page-bg-color-light); 
+  --search-bg-color: var(--search-bg-color-light); 
+  --controls-bg-color: var(--controls-bg-color-light); 
+  
+  /* Text color variants */
+  --text-color-contrast-1: var(--text-color-contrast-1-light); 
+  --text-color-contrast-2: var(--text-color-contrast-2-light); 
+  --text-color-contrast-3: var(--text-color-contrast-3-light); 
+  --text-color-contrast-4: var(--text-color-contrast-4-light); 
+  
+  /* --text-color: var(--light-text-color);
+  --bg-color: var(--light-bg-color); */
+
+  --button-bg-color: var(--light-button-bg-color);
+}
+/* Dark theme colors */
+body.dark-theme {
+  --body-bg-color: var(--body-bg-color-dark); 
+  --header-bg-color: var(--header-bg-color-dark); 
+  --page-bg-color: var(--page-bg-color-dark); 
+  --search-bg-color: var(--search-bg-color-dark); 
+  --controls-bg-color: var(--controls-bg-color-dark); 
+  
+  /* Text color variants */
+  --text-color-contrast-1: var(--text-color-contrast-1-dark); 
+  --text-color-contrast-2: var(--text-color-contrast-2-dark); 
+  --text-color-contrast-3: var(--text-color-contrast-3-dark); 
+  --text-color-contrast-4: var(--text-color-contrast-4-dark); 
+  /* --text-color: var(--dark-text-color);
+  --bg-color: var(--dark-bg-color);
+
+  --button-bg-color: var(--dark-button-bg-color); */
+}
+
+/* Styles for users who prefer dark mode at the OS level */
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body.dark-theme {
+    --body-bg-color: var(--body-bg-color-dark); 
+  --header-bg-color: var(--header-bg-color-dark); 
+  --page-bg-color: var(--page-bg-color-dark); 
+  --search-bg-color: var(--search-bg-color-dark); 
+  --controls-bg-color: var(--controls-bg-color-dark); 
+  
+  /* Text color variants */
+  --text-color-contrast-1: var(--text-color-contrast-1-dark); 
+  --text-color-contrast-2: var(--text-color-contrast-2-dark); 
+  --text-color-contrast-3: var(--text-color-contrast-3-dark); 
+  --text-color-contrast-4: var(--text-color-contrast-4-dark); 
+    /* --text-color: var(--dark-text-color);
+    --bg-color: var(--dark-bg-color);
+
+    --button-bg-color: var(--dark-button-bg-color); */
+  }
+  /* Override dark mode with light mode styles if the user decides to swap */
+  body.light-theme {
+    --body-bg-color: var(--body-bg-color-light); 
+  --header-bg-color: var(--header-bg-color-light); 
+  --page-bg-color: var(--page-bg-color-light); 
+  --search-bg-color: var(--search-bg-color-light); 
+  --controls-bg-color: var(--controls-bg-color-light); 
+  
+  /* Text color variants */
+  --text-color-contrast-1: var(--text-color-contrast-1-light); 
+  --text-color-contrast-2: var(--text-color-contrast-2-light); 
+  --text-color-contrast-3: var(--text-color-contrast-3-light); 
+  --text-color-contrast-4: var(--text-color-contrast-4-light); 
+    /* --text-color: var(--light-text-color);
+    --bg-color: var(--light-bg-color);
+
+    --button-bg-color: var(--light-button-bg-color); */
+  }
+}
+
+
+  /* --body-bg-color: #cbd5df;
+
+  --header-bg-color: #e2e8f0;
+  --header-text-color: #2d3848;
+
+  --nav-selected-bg-color: #f7fafb;
+  --nav-selected-text-color: #2d3848;
+  --nav-not-selected-text-color: #4a5568;
+
+  --page-bg-color: #f7fafb;
+
+  --search-bg-color: #edf1f6;
+  --search-bg-border-color: #e2e8f0;
+  --search-text-color: #718096;
+
+  --audio-item-text-dark-color: #2d3848;
+  --audio-item-text-medium-color: #2d3848;
+  --audio-item-text-light-color: #2d3848;
+  --audio-item-border-color: #f7fafb;
+
+  --controls-bg-color: #fefefe;
+  --audio-item-text-dark-color: #2d3848;
+  --audio-item-text-medium-color: #2d3848; */
