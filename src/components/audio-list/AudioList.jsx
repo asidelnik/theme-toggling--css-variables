@@ -1,15 +1,19 @@
+import { useState } from 'react';
 import AudioItem from '../audio-item/AudioItem';
 import { audioList } from '../../fake-data/audio-list-fake';
 
 export default function AudioList() {
+  const [playingAudioItemId, setPlayingAudioItemId] = useState(null);
   return (
     <>
       <section className="audio-list">
-        {audioList.map((item, index) => {
+        {audioList.map((item) => {
           return (
             <AudioItem
-              key={index}
+              key={item.id}
               {...item}
+              isPlaying={playingAudioItemId === item.id}
+              onPlay={() => setPlayingAudioItemId(item.id)}
             />
           );
         })}

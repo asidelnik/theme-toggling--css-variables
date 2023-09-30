@@ -2,25 +2,32 @@ import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import PropTypes from 'prop-types';
 import c from './audio-item.module.scss';
 
-export default function AudioItem({ title, duration, podcastName, date }) {
+export default function AudioItem({
+  title,
+  duration,
+  podcastName,
+  date,
+  isPlaying,
+  onPlay,
+}) {
   return (
     <>
       <article className={c.audioItem}>
-        <div className={c.icon}>
-          <VolumeUpIcon />
+        <div className={c.icon}>{isPlaying && <VolumeUpIcon />}</div>
+
+        <div
+          className={isPlaying ? c.title + ' ' + c.selected : c.title}
+          onClick={onPlay}
+        >
+          {title}
         </div>
 
-        <div className={c.title}>
-          <h3>{title}</h3>
-        </div>
-
-        <div className={c.duration}>
-          <p>{duration}</p>
-        </div>
+        <div className={c.duration}>{duration}</div>
 
         <div className={c.info}>
-          <p className={c.podcastName}>{podcastName}</p>
-          <p className={c.date}>{date}</p>
+          <span>{podcastName}</span>
+          <span className={c.dotSeparator}>•</span>
+          <span>{date}</span>
         </div>
       </article>
     </>
@@ -32,6 +39,8 @@ AudioItem.propTypes = {
   duration: PropTypes.string.isRequired,
   podcastName: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
+  isPlaying: PropTypes.bool.isRequired,
+  onPlay: PropTypes.func.isRequired,
 };
 
 AudioItem.defaultProps = {
@@ -39,4 +48,5 @@ AudioItem.defaultProps = {
   duration: '00:00',
   podcastName: 'Podcast Name',
   date: '00/00/00',
+  isPlaying: false,
 };
