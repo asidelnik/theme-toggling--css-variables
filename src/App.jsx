@@ -12,13 +12,15 @@ export default function App() {
   return (
     <>
       <PodcastsApp />
-      <IconButton
-        aria-label="Toggle theme"
-        onClick={toggleTheme}
-        className={clsx(c.toggleButton)}
-      >
-        {theme === 'light-theme' ? <NightlightIcon /> : <LightModeIcon />}
-      </IconButton>
+      <div className={c.themeButton}>
+        <IconButton
+          aria-label="Toggle theme"
+          onClick={toggleTheme}
+          className={clsx(c.toggleButton)}
+        >
+          {theme === 'light-theme' ? <NightlightIcon /> : <LightModeIcon />}
+        </IconButton>
+      </div>
     </>
   );
 }

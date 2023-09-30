@@ -22,7 +22,7 @@ export default function Progress() {
   // }, []);
 
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box>
       <LinearProgress
         variant="determinate"
         value={progress}
@@ -30,3 +30,4 @@ export default function Progress() {
     </Box>
   );
 }
+//  sx={{ width: '100%' }}

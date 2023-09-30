@@ -1,9 +1,9 @@
 import createTheme from "@mui/material/styles/createTheme";
 
 export const muiTheme = createTheme({
-  // typography: {
-  //   // htmlFontSize: 8,
-  // },
+  typography: {
+    htmlFontSize: 16,
+  },
   // indicator: {
   //   background: "none"
   // },
@@ -40,7 +40,8 @@ export const muiTheme = createTheme({
         root: {
           fontSize: "1em",
           textTransform: "none",
-          borderRadius: "0 10px 0 0",
+          borderRadius: "10px 10px 0 0",
+          padding: "0 20px",
         },
       },
     },

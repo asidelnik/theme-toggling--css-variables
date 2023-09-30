@@ -2,15 +2,28 @@
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-size: 16px;
   box-sizing: border-box;
-
-  /* color-scheme: light dark; */
 
   --border-radius-large: 10px;
   --border-radius-medium: 5px;
 
+  /* Font sizes ****************************************/
+  --font-size-xxs: 0.625rem;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-xxl: 1.5rem;
+  --font-size-xxxl: 2rem;
+  --font-size-xxxxl: 2.5rem;
+  
+
   /* Light theme ****************************************/
   --primary-color-light: hsl(179, 51%, 39%);
+  
+  --shadow-hsl-light: 0, 0%, 42%;
 
   --bg-color-hue-light: 210;
   --text-color-hue-light: 216;
@@ -22,17 +35,17 @@
   --controls-bg-color-light: hsl(0, 0%, 100%);
   
   /* Text color variants */
-  --text-color-contrast-1-light: hsl(var(--text-color-hue-light), 17%, 35%);
-  --text-color-contrast-2-light: hsl(var(--text-color-hue-light), 23%, 23%);
-  --text-color-contrast-3-light: hsl(var(--text-color-hue-light), 15%, 52%);
-  --text-color-contrast-4-light: hsl(var(--text-color-hue-light), 33%, 95%);
-  
-  /* --light-text-color: #444444;
-  --light-bg-color: #eaeaea;
-  --light-button-bg-color: #424242; */
-  
-  /* Light theme ****************************************/
+  --text-color-contrast-1-light: hsl(var(--text-color-hue-light), 17%, 30%);
+  --text-color-contrast-2-light: hsl(var(--text-color-hue-light), 17%, 45%);
+  --text-color-contrast-3-light: hsl(var(--text-color-hue-light), 17%, 60%);
+  --text-color-contrast-4-light: hsl(var(--text-color-hue-light), 17%, 75%);
+  --text-color-contrast-5-light: hsl(var(--text-color-hue-light), 17%, 90%);
+
+
+  /* Dark theme ****************************************/
   --primary-color-dark: hsl(173, 66%, 70%);
+
+  --shadow-hsl-dark: 0, 0%, 0%;
 
   --bg-color-hue-dark: 216;
   --text-color-hue-dark: 0;
@@ -45,14 +58,11 @@
   
   /* Text color variants */
   --text-color-contrast-1-dark: hsl(var(--text-color-hue-dark), 0%, 100%);
-  --text-color-contrast-2-dark: hsl(var(--text-color-hue-dark), 0%, 84%);
-  --text-color-contrast-3-dark: hsl(var(--text-color-hue-dark), 0%, 52%);
-  --text-color-contrast-4-dark: hsl(var(--text-color-hue-dark), 0%, 95%);
+  --text-color-contrast-2-dark: hsl(var(--text-color-hue-dark), 0%, 85%);
+  --text-color-contrast-3-dark: hsl(var(--text-color-hue-dark), 0%, 70%);
+  --text-color-contrast-4-dark: hsl(var(--text-color-hue-dark), 0%, 55%);
+  --text-color-contrast-5-dark: hsl(var(--text-color-hue-dark), 0%, 40%);
 
-  /* --dark-text-color: #9e9e9e;
-
-  --dark-bg-color: #2e2e2e;
-  --dark-button-bg-color: #4068ce; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -64,6 +74,10 @@
 /* Themes colors ********************/
 
 body.light-theme {
+  --primary-color: var(--primary-color-light);
+
+  --shadow-hsl: var(--shadow-hsl-light);
+
   --body-bg-color: var(--body-bg-color-light);
   --header-bg-color: var(--header-bg-color-light);
   --page-bg-color: var(--page-bg-color-light);
@@ -75,6 +89,7 @@ body.light-theme {
   --text-color-contrast-2: var(--text-color-contrast-2-light);
   --text-color-contrast-3: var(--text-color-contrast-3-light);
   --text-color-contrast-4: var(--text-color-contrast-4-light);
+  --text-color-contrast-5: var(--text-color-contrast-5-light);
 
   /* --text-color: var(--light-text-color);
   --bg-color: var(--light-bg-color); */
@@ -83,6 +98,10 @@ body.light-theme {
 }
 /* Dark theme colors */
 body.dark-theme {
+  --primary-color: var(--primary-color-dark);
+
+  --shadow-hsl: var(--shadow-hsl-dark);
+
   --body-bg-color: var(--body-bg-color-dark);
   --header-bg-color: var(--header-bg-color-dark);
   --page-bg-color: var(--page-bg-color-dark);
@@ -94,6 +113,7 @@ body.dark-theme {
   --text-color-contrast-2: var(--text-color-contrast-2-dark);
   --text-color-contrast-3: var(--text-color-contrast-3-dark);
   --text-color-contrast-4: var(--text-color-contrast-4-dark);
+  --text-color-contrast-5: var(--text-color-contrast-5-dark);
   /* --text-color: var(--dark-text-color);
   --bg-color: var(--dark-bg-color); */
 
@@ -104,6 +124,10 @@ body.dark-theme {
 @media (prefers-color-scheme: dark) {
   /* defaults to dark theme */
   body.dark-theme {
+    --primary-color: var(--primary-color-dark);
+
+    --shadow-hsl: var(--shadow-hsl-dark);
+
     --body-bg-color: var(--body-bg-color-dark);
     --header-bg-color: var(--header-bg-color-dark);
     --page-bg-color: var(--page-bg-color-dark);
@@ -115,6 +139,7 @@ body.dark-theme {
     --text-color-contrast-2: var(--text-color-contrast-2-dark);
     --text-color-contrast-3: var(--text-color-contrast-3-dark);
     --text-color-contrast-4: var(--text-color-contrast-4-dark);
+    --text-color-contrast-5: var(--text-color-contrast-5-dark);
     /* --text-color: var(--dark-text-color);
     --bg-color: var(--dark-bg-color); */
 
@@ -122,6 +147,10 @@ body.dark-theme {
   }
   /* Override dark mode with light mode styles if the user decides to swap */
   body.light-theme {
+    --primary-color: var(--primary-color-light);
+
+    --shadow-hsl: var(--shadow-hsl-light);
+
     --body-bg-color: var(--body-bg-color-light);
     --header-bg-color: var(--header-bg-color-light);
     --page-bg-color: var(--page-bg-color-light);
@@ -133,33 +162,10 @@ body.dark-theme {
     --text-color-contrast-2: var(--text-color-contrast-2-light);
     --text-color-contrast-3: var(--text-color-contrast-3-light);
     --text-color-contrast-4: var(--text-color-contrast-4-light);
+    --text-color-contrast-5: var(--text-color-contrast-5-light);
     /* --text-color: var(--light-text-color);
     --bg-color: var(--light-bg-color); */
 
     --button-bg-color: var(--header-bg-color-light);
   }
 }
-
-/* --body-bg-color: #cbd5df;
-
-  --header-bg-color: #e2e8f0;
-  --header-text-color: #2d3848;
-
-  --nav-selected-bg-color: #f7fafb;
-  --nav-selected-text-color: #2d3848;
-  --nav-not-selected-text-color: #4a5568;
-
-  --page-bg-color: #f7fafb;
-
-  --search-bg-color: #edf1f6;
-  --search-bg-border-color: #e2e8f0;
-  --search-text-color: #718096;
-
-  --audio-item-text-dark-color: #2d3848;
-  --audio-item-text-medium-color: #2d3848;
-  --audio-item-text-light-color: #2d3848;
-  --audio-item-border-color: #f7fafb;
-
-  --controls-bg-color: #fefefe;
-  --audio-item-text-dark-color: #2d3848;
-  --audio-item-text-medium-color: #2d3848; */

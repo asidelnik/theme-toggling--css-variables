@@ -1,19 +1,25 @@
 .customTab {
   background-color: var(--header-bg-color) !important;
   border: 0;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 var(--border-radius-medium) var(--border-radius-medium);
+  color: var(--text-color-contrast-3) !important;
 }
 
 .customTabSelected {
   background-color: var(--page-bg-color) !important;
   color: var(--text-color-contrast-2) !important;
   text-transform: none !important;
-  border-radius: 10px 10px 0 0;
+  border-radius: var(--border-radius-medium) var(--border-radius-medium) 0 0;
   border: 0;
-
 }
 
 .customTabSelected:focus {
   outline: none;
 }
 
+.otherPage {
+  height: 478.5px;
+  width: 420px;
+  background-color: var(--page-bg-color);
+  border-radius: 0 0 var(--border-radius-medium) var(--border-radius-medium);
+}

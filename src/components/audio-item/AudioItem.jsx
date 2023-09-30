@@ -2,14 +2,8 @@ import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import PropTypes from 'prop-types';
 import c from './audio-item.module.scss';
 
-export default function AudioItem({
-  title,
-  duration,
-  podcastName,
-  date,
-  isPlaying,
-  onPlay,
-}) {
+export default function AudioItem(props) {
+  const { title, duration, podcastName, date, isPlaying, onPlay } = props;
   return (
     <>
       <article className={c.audioItem}>
@@ -43,10 +37,10 @@ AudioItem.propTypes = {
   onPlay: PropTypes.func.isRequired,
 };
 
-AudioItem.defaultProps = {
-  title: 'Audio Title',
-  duration: '00:00',
-  podcastName: 'Podcast Name',
-  date: '00/00/00',
-  isPlaying: false,
-};
+// AudioItem.defaultProps = {
+//   title: 'Audio Title',
+//   duration: '00:00',
+//   podcastName: 'Podcast Name',
+//   date: '00/00/00',
+//   isPlaying: false,
+// };

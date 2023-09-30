@@ -81,14 +81,14 @@ export default function TabsNav() {
         index={1}
         sx={{ border: 0 }}
       >
-        Shows
+        <div className={c.otherPage}></div>
       </CustomTabPanel>
       <CustomTabPanel
         value={value}
         index={2}
         sx={{ border: 0 }}
       >
-        Downloads
+        <div className={c.otherPage}></div>
       </CustomTabPanel>
     </Box>
   );

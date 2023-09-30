@@ -1,4 +1,12 @@
-.toggleButton {
-  background-color: var(--button-bg-color);
-  color: var(--text-color-contrast-1);
+
+.themeButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-block-start: 20px;
+  
+  .toggleButton {
+    background-color: var(--button-bg-color);
+    color: var(--text-color-contrast-1);
+  }
 }
