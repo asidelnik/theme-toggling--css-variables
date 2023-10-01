@@ -5,11 +5,14 @@ import './styling/theme.css';
 import './index.css';
 import { ThemeProvider } from '@mui/material/styles';
 import { muiTheme } from './styling/mui-theme.js';
+import ControlsProvider from './contexts/controls-context.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ThemeProvider theme={muiTheme}>
-      <App />
-    </ThemeProvider>
+    <ControlsProvider>
+      <ThemeProvider theme={muiTheme}>
+        <App />
+      </ThemeProvider>
+    </ControlsProvider>
   </React.StrictMode>
 );

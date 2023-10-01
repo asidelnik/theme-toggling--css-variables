@@ -14,7 +14,8 @@
   justify-self: center;
   align-self: center;
   color: var(--text-color-contrast-3);
-  cursor: pointer;
+  // cursor: pointer;
+  pointer-events: none;
 }
 
 .icons {
@@ -32,8 +33,9 @@
 
   .iconMedium {
     color: var(--text-color-contrast-3);
-    cursor: pointer;
+    // cursor: pointer;
     font-size: var(--font-size-xxxl);
+    pointer-events: none;
   }
 
   .iconLarge {
