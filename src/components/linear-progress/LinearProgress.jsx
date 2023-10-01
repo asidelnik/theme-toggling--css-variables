@@ -26,6 +26,7 @@ export default function Progress() {
       <LinearProgress
         variant="determinate"
         value={progress}
+        color={'primary'}
       />
     </Box>
   );
