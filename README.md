@@ -3,7 +3,7 @@
 * A study of theme toggling with React, CSS variables, custom hooks, useContext, useReducer and custom MUI components.
 * Styling based on Material Design principles.
 * Light & dark modes.
-* [Tutroial toggling tutrial]([url](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/))
+* [Theme toggling tutorial](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/)
   
 ### Design by Steve Schoger - explained in this post:
 https://twitter.com/steveschoger/status/1151160261170126850/photo/1
