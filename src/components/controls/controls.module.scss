@@ -43,6 +43,10 @@
     cursor: pointer;
     font-size: var(--font-size-xxxxl);
   }
+  
+  .disabled {
+    color: var(--text-color-contrast-4);
+  }
 }
 
 .speed {

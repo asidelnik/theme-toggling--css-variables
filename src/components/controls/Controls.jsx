@@ -42,11 +42,20 @@ export default function Controls() {
           </div>
 
           <div className={c.pausePlay}>
-            <IconButton onClick={togglePlay}>
+            <IconButton
+              onClick={togglePlay}
+              disabled={controls.playingTrackId === null}
+            >
               {controls.isPlaying ? (
                 <PauseCircleIcon className={clsx(c.iconLarge)} />
               ) : (
-                <PlayCircleFilledIcon className={clsx(c.iconLarge)} />
+                <PlayCircleFilledIcon
+                  className={
+                    controls.playingTrackId === null
+                      ? clsx(c.iconLarge + ' ' + c.disabled)
+                      : clsx(c.iconLarge)
+                  }
+                />
               )}
             </IconButton>
           </div>
