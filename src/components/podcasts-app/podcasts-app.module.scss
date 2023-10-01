@@ -1,8 +1,8 @@
 .container {
+  width: fit-content;
   background-color: var(--header-bg-color);
   border-radius: var(--border-radius-large);
-  box-shadow: 
-    0 3px 6px hsla(var(--shadow-hsl), 0.16), 
+  box-shadow: 0 3px 6px hsla(var(--shadow-hsl), 0.16),
     0 3px 6px hsla(var(--shadow-hsl), 0.23);
 
   h1 {

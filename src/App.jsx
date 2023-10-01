@@ -11,15 +11,19 @@ export default function App() {
 
   return (
     <>
-      <PodcastsApp />
-      <div className={c.themeButton}>
-        <IconButton
-          aria-label="Toggle theme"
-          onClick={toggleTheme}
-          className={clsx(c.toggleButton)}
-        >
-          {theme === 'light-theme' ? <NightlightIcon /> : <LightModeIcon />}
-        </IconButton>
+      <div className={c.container}>
+        <h1 className={c.bgH1}>Theme toggling study</h1>
+        <h2 className={c.bgH2}>Light and dark modes</h2>
+        <PodcastsApp />
+        <div className={c.themeButton}>
+          <IconButton
+            aria-label="Toggle theme"
+            onClick={toggleTheme}
+            className={clsx(c.toggleButton)}
+          >
+            {theme === 'light-theme' ? <NightlightIcon /> : <LightModeIcon />}
+          </IconButton>
+        </div>
       </div>
     </>
   );
