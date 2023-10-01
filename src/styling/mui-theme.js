@@ -7,33 +7,32 @@ export const muiTheme = createTheme({
   // indicator: {
   //   background: "none"
   // },
-
-  // palette: {
-  //   primary: {
-  //     main: "rgb(48, 48, 48)",
-  //     borders: "0"
-  //   },
-  //   secondary: {
-  //     main: "#ffffff",
-  //     borders: "0"
-  //   },
-  //   error: {
-  //     main: "#ff0000",
-  //     borders: "0"
-  //   },
-  //   warning: {
-  //     main: "#ff9800",
-  //     borders: "0"
-  //   },
-  //   info: {
-  //     main: "rgb(48, 48, 48)",
-  //     borders: "0"
-  //   },
-  //   success: {
-  //     main: "#4caf50",
-  //     borders: "0"
-  //   },
+  palette: {
+    primary: {
+      main: "rgb(49, 150, 148)",
+      borders: "0"
+    },
+    secondary: {
+      main: "#ffffff",
+      borders: "0"
+    },
+  // error: {
+  //   main: "#ff0000",
+  //   borders: "0"
   // },
+  // warning: {
+  //   main: "#ff9800",
+  //   borders: "0"
+  // },
+  // info: {
+  //   main: "rgb(48, 48, 48)",
+  //   borders: "0"
+  // },
+  // success: {
+  //   main: "#4caf50",
+  //   borders: "0"
+  // },
+  },
   components: {
     MuiTab: {
       styleOverrides: {
