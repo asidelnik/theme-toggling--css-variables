@@ -30,7 +30,6 @@ ControlsProvider.propsTypes = {
 };
 
 function controlsReducer(controls, action) {
-  console.log(controls, action);
   switch (action.type) {
     case 'set-is-playing': {
       return {
