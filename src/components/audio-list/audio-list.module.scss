@@ -2,3 +2,17 @@
   overflow-y: auto;
   height: 250px;
 }
+
+.audioList::-webkit-scrollbar {
+  width: 12px;
+}
+
+.audioList::-webkit-scrollbar-track {
+  background-color: var(--search-bg-color);
+  border-radius: 10px;
+}
+
+.audioList::-webkit-scrollbar-thumb {
+  background-color: var(--text-color-contrast-4);
+  border-radius: 10px;
+}
