@@ -93,5 +93,3 @@ export default function TabsNav() {
     </Box>
   );
 }
-
-// 'Mui-selected', 'MuiTab-root'

@@ -10,8 +10,7 @@ export default function useToggleTheme() {
       document.body.className = localStorageTheme;
       setTheme(localStorageTheme);
     } else {
-      // TODO - fix this. Doesn't work.
-      // console.log(prefersDarkScheme, prefersDarkScheme.matches);
+      // TODO - improve this feature
       const browserTheme = prefersDarkScheme.matches
         ? 'dark-theme'
         : 'light-theme';

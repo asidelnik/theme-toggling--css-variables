@@ -1,5 +1,4 @@
 import c from './search.module.scss';
-// import Box from '@mui/material/Box';
 import Input from '@mui/material/Input';
 import InputAdornment from '@mui/material/InputAdornment';
 import FormControl from '@mui/material/FormControl';
@@ -9,7 +8,6 @@ import clsx from 'clsx';
 export default function Search() {
   return (
     <>
-      {/* <Box sx={{ '& > :not(style)': { m: 1 } }}> */}
       <div className={c.container}>
         <FormControl
           variant="standard"
@@ -27,7 +25,6 @@ export default function Search() {
           />
         </FormControl>
       </div>
-      {/* </Box> */}
     </>
   );
 }

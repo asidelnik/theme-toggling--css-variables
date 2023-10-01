@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, auto);
-  // grid-gap: 10px;
   border-radius: 0 0 var(--border-radius-large) var(--border-radius-large);
   background-color: var(--controls-bg-color);
   padding: 20px 0;
@@ -14,14 +13,12 @@
   justify-self: center;
   align-self: center;
   color: var(--text-color-contrast-3);
-  // cursor: pointer;
   pointer-events: none;
 }
 
 .icons {
   grid-row: 1;
   grid-column: 2 / 6;
-  // justify-self: center;
   align-self: center;
   color: var(--text-color-contrast-3);
   
@@ -33,7 +30,6 @@
 
   .iconMedium {
     color: var(--text-color-contrast-3);
-    // cursor: pointer;
     font-size: var(--font-size-xxxl);
     pointer-events: none;
   }

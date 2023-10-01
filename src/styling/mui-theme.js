@@ -4,9 +4,6 @@ export const muiTheme = createTheme({
   typography: {
     htmlFontSize: 16,
   },
-  // indicator: {
-  //   background: "none"
-  // },
   palette: {
     primary: {
       main: "rgb(49, 150, 148)",
@@ -16,22 +13,6 @@ export const muiTheme = createTheme({
       main: "#ffffff",
       borders: "0"
     },
-  // error: {
-  //   main: "#ff0000",
-  //   borders: "0"
-  // },
-  // warning: {
-  //   main: "#ff9800",
-  //   borders: "0"
-  // },
-  // info: {
-  //   main: "rgb(48, 48, 48)",
-  //   borders: "0"
-  // },
-  // success: {
-  //   main: "#4caf50",
-  //   borders: "0"
-  // },
   },
   components: {
     MuiTab: {
@@ -56,3 +37,22 @@ export const muiTheme = createTheme({
     },
   },
 });
+
+/*
+error: {
+  main: "#ff0000",
+  borders: "0"
+},
+warning: {
+  main: "#ff9800",
+  borders: "0"
+},
+info: {
+  main: "rgb(48, 48, 48)",
+  borders: "0"
+},
+success: {
+  main: "#4caf50",
+  borders: "0"
+},
+*/
