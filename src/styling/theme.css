@@ -82,6 +82,7 @@ body.light-theme {
   --header-bg-color: var(--header-bg-color-light);
   --page-bg-color: var(--page-bg-color-light);
   --search-bg-color: var(--search-bg-color-light);
+  --search-bg-color-border: var(--search-bg-color-light);
   --controls-bg-color: var(--controls-bg-color-light);
 
   /* Text color variants */
@@ -106,6 +107,7 @@ body.dark-theme {
   --header-bg-color: var(--header-bg-color-dark);
   --page-bg-color: var(--page-bg-color-dark);
   --search-bg-color: var(--search-bg-color-dark);
+  --search-bg-color-border: var(--search-bg-color-dark);
   --controls-bg-color: var(--controls-bg-color-dark);
 
   /* Text color variants */
@@ -132,6 +134,7 @@ body.dark-theme {
     --header-bg-color: var(--header-bg-color-dark);
     --page-bg-color: var(--page-bg-color-dark);
     --search-bg-color: var(--search-bg-color-dark);
+    --search-bg-color-border: var(--search-bg-color-dark);
     --controls-bg-color: var(--controls-bg-color-dark);
 
     /* Text color variants */
@@ -155,6 +158,7 @@ body.dark-theme {
     --header-bg-color: var(--header-bg-color-light);
     --page-bg-color: var(--page-bg-color-light);
     --search-bg-color: var(--search-bg-color-light);
+    --search-bg-color-border: var(--text-color-contrast-5-light);
     --controls-bg-color: var(--controls-bg-color-light);
 
     /* Text color variants */
