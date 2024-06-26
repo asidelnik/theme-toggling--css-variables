@@ -1,5 +1,5 @@
 # Theme toggling study - CSS variables
-[Functional UI](https://asidelnik.github.io/theme-toggling--css-variables/)
+[Demo site](https://asidelnik.github.io/theme-toggling--css-variables/)
 * A study of theme toggling with React, CSS variables, custom hooks, useContext, useReducer and custom MUI components.
 * Styling based on Material Design principles.
 * Light & dark modes.
